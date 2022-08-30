@@ -9,14 +9,17 @@ def plotDistributions(dataframe:pd.DataFrame, title=None):
     axes = axes.flat
 
     for i, feature in enumerate(dataframe.columns):
-        sns.distplot(
+        sns.histplot(
             x       =dataframe[feature],
+            kde     = True,
             color   = (list(plt.rcParams['axes.prop_cycle'])*2)[i]["color"],
             ax      = axes[i]
         )
         axes[i].set_title(feature, fontsize = 12, fontweight = "bold")
         axes[i].tick_params(labelsize = 9)
         axes[i].set_xlabel("")
+
     
     fig.tight_layout()
-    fig.suptitle(title, y=1.1,fontsize = 15, fontweight = "bold");
+    fig.suptitle(title, y=1.1,fontsize = 15, fontweight = "bold")
+    
