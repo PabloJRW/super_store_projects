@@ -1,15 +1,41 @@
-# Segmentación de clientes
+# Retail Projects
 
-Este repositorio consiste principalmente en la <b>segmentación de clientes</b> mediante el uso de distintas técnicas. En el cual dos de estas técnicas utilizadas, consisten del uso de algoritmos de <b>Aprendizaje No-Supervisado</b>. Estos algoritmos de Aprendizaje No-Supervisado son:
+Este repositorio fue creado principalmente para el desarrollo de modelos para segmentar clientes. Empezando con un método tradicional y luego experimentando con modelos de Aprendizaje Automático No-Supervisado.
 <ul>
+<li><b> Análisis RFM </b></li>
 <li><b> K-medias </b></li>
 <li><b> Segmentación jerárquica </b></li>
 </ul>
-Los cuales fueron entrenenados con variables resultantes de un <b>Análisis RFM</b> (Recency, Frequency and Monetary Value).Además de los proyectos de segmentación de clientes, estan incluídos proyectos de:
-
+Este además contiene:
 <ul>
-  <li><b>Minería de datos:</b></li> Analizo y transformo los datos en búsqueda de patrones que aporten información de valor.
-  <li><b>Análisis de cohortes (Retención de clientes):</b></li> Se establecen cohortes y se analiza el porcentaje de clientes que regresan a adquirir los servicios a tráves del tiempo. 
-  <li><b>Análisis de series de tiempo:</b></li> Analizo el comportamiento de las variables a través del tiempo.
+<li><b> EDA (Análisis Exploratorio de Datos) </b></li>
+<li><b> Análisis de cohorte </b></li>
 </ul>
+
+## Instalar
+1. Inicia un entorno virtual.
+
+2. Clona el repositorio:
+```bash
+git@github.com:PabloJRW/super_store_projects.git
+```
+3. Instala las dependencias:
+```bash
+pip install -r requirements.txt
+```
+
+
+
+        ├── datasets
+        │   ├── processed      <- The final, canonical data sets for modeling.
+        │   └── raw            <- The original, immutable data dump.
+        │
+        ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+        │                         the creator's initials, and a short `-` delimited description`.
+        │
+        ├── .gitignore         <- Files to ignore by `git`.
+        │
+        ├── requirements.txt   <- The requirements file for reproducing the analysis environment.
+        │
+        └── README.md          <- The top-level README for developers using this project.
 
