@@ -1,0 +1,25 @@
+#title {
+    display:flex;
+    justify-content:center; 
+    background-color:#FF9900;
+    color:#F0F0F0;
+    padding:12px;
+    border: 0px 0px;
+    margin:0px;
+    font-size:42px
+}
+
+#principal-graph {
+    width:600px;
+    height:250px;
+}
+
+.div-viz {
+    display:flex;
+}
+
+.bi-viz {
+    width:750px;
+    height:750px;
+}
+

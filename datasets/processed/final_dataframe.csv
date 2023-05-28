@@ -1,0 +1,794 @@
+,Customer ID,Customer Name,Segment,Region,SegmentLabel
+0,CG-12520,Claire Gute,Consumer,South,Bronze
+1,DV-13045,Darrin Van Huff,Corporate,West,Bronze
+2,SO-20335,Sean O'Donnell,Consumer,South,Bronze
+3,BH-11710,Brosina Hoffman,Consumer,West,Gold
+4,AA-10480,Andrew Allen,Consumer,South,Bronze
+5,IM-15070,Irene Maddox,Consumer,West,Silver
+6,HP-14815,Harold Pawlan,Home Office,Central,Silver
+7,PK-19075,Pete Kriz,Consumer,Central,Gold
+8,AG-10270,Alejandro Grove,Consumer,West,Silver
+9,ZD-21925,Zuschuss Donatelli,Consumer,West,Bronze
+10,KB-16585,Ken Black,Corporate,Central,Silver
+11,SF-20065,Sandra Flanagan,Consumer,East,Bronze
+12,EB-13870,Emily Burns,Consumer,West,Bronze
+13,EH-13945,Eric Hoffmann,Consumer,West,Bronze
+14,TB-21520,Tracy Blumstein,Consumer,East,Bronze
+15,MA-17560,Matt Abelman,Home Office,Central,Silver
+16,GH-14485,Gene Hale,Corporate,Central,Bronze
+17,SN-20710,Steve Nguyen,Home Office,Central,Silver
+18,LC-16930,Linda Cazamias,Corporate,Central,Silver
+19,RA-19885,Ruben Ausman,Corporate,West,Silver
+20,ES-14080,Erin Smith,Corporate,South,Silver
+21,ON-18715,Odella Nelson,Corporate,Central,Bronze
+22,PO-18865,Patrick O'Donnell,Consumer,Central,Silver
+23,LH-16900,Lena Hernandez,Consumer,East,Silver
+24,DP-13000,Darren Powers,Consumer,Central,Bronze
+25,JM-15265,Janet Molinari,Corporate,East,Silver
+26,TB-21055,Ted Butterfield,Consumer,East,Silver
+27,KM-16720,Kunst Miller,Consumer,West,Gold
+28,PS-18970,Paul Stevenson,Home Office,Central,Bronze
+29,BS-11590,Brendan Sweed,Corporate,West,Silver
+30,KD-16270,Karen Daniels,Consumer,South,Silver
+31,HM-14980,Henry MacAllister,Consumer,East,Bronze
+32,JE-15745,Joel Eaton,Consumer,South,Silver
+33,KB-16600,Ken Brennan,Corporate,Central,Silver
+34,SC-20770,Stewart Carmichael,Corporate,South,Silver
+35,DN-13690,Duane Noonan,Consumer,West,Bronze
+36,JC-16105,Julie Creighton,Corporate,South,Bronze
+37,CS-12400,Christopher Schild,Home Office,Central,Silver
+38,PG-18895,Paul Gonzalez,Consumer,Central,Silver
+39,GM-14455,Gary Mitchum,Home Office,Central,Silver
+40,JS-15685,Jim Sink,Corporate,West,Bronze
+41,KB-16315,Karl Braun,Consumer,Central,Bronze
+42,RB-19705,Roger Barcio,Home Office,West,Bronze
+43,PN-18775,Parhena Norris,Home Office,East,Silver
+44,KD-16345,Katherine Ducich,Consumer,West,Silver
+45,ER-13855,Elpida Rittenbach,Corporate,Central,Bronze
+46,RB-19465,Rick Bensley,Home Office,Central,Gold
+47,GZ-14470,Gary Zandusky,Consumer,Central,Gold
+48,LC-16870,Lena Cacioppo,Consumer,West,Silver
+49,JM-15250,Janet Martin,Consumer,South,Silver
+50,PA-19060,Pete Armstrong,Home Office,Central,Bronze
+51,CV-12805,Cynthia Voltz,Corporate,East,Silver
+52,CL-12565,Clay Ludtke,Consumer,Central,Silver
+53,RC-19960,Ryan Crowe,Consumer,East,Bronze
+54,DK-13090,Dave Kipp,Consumer,West,Silver
+55,GG-14650,Greg Guthrie,Corporate,South,Silver
+56,SC-20725,Steven Cartwright,Consumer,East,Silver
+57,AD-10180,Alan Dominguez,Home Office,Central,Silver
+58,PF-19165,Philip Fox,Consumer,Central,Bronze
+59,TS-21610,Troy Staebel,Consumer,West,Bronze
+60,LS-16975,Lindsay Shagiari,Home Office,West,Silver
+61,DW-13585,Dorothy Wardle,Corporate,East,Bronze
+62,LC-16885,Lena Creighton,Consumer,West,Gold
+63,JD-15895,Jonathan Doherty,Corporate,East,Silver
+64,SH-19975,Sally Hughsby,Corporate,West,Silver
+65,SG-20080,Sandra Glassco,Consumer,Central,Silver
+66,HA-14920,Helen Andreada,Consumer,West,Silver
+67,MG-17680,Maureen Gastineau,Home Office,East,Bronze
+68,JE-16165,Justin Ellison,Corporate,Central,Silver
+69,TW-21025,Tamara Willingham,Home Office,West,Silver
+70,SP-20650,Stephanie Phelps,Corporate,West,Bronze
+71,NK-18490,Neil Knudson,Home Office,West,Bronze
+72,DB-13060,Dave Brooks,Consumer,West,Silver
+73,NP-18670,Nora Paige,Consumer,Central,Bronze
+74,TT-21070,Ted Trevino,Consumer,West,Silver
+75,EM-13960,Eric Murdock,Consumer,East,Bronze
+76,RD-19900,Ruben Dartt,Consumer,West,Silver
+77,MJ-17740,Max Jones,Consumer,West,Gold
+78,BM-11140,Becky Martin,Consumer,Central,Bronze
+79,CS-12130,Chad Sievert,Consumer,West,Bronze
+80,JB-15400,Jennifer Braxton,Corporate,Central,Silver
+81,SJ-20500,Shirley Jackson,Consumer,Central,Bronze
+82,JK-15640,Jim Kriz,Home Office,East,Silver
+83,DK-13150,David Kendrick,Corporate,Central,Bronze
+84,RM-19675,Robert Marley,Home Office,South,Silver
+85,SK-19990,Sally Knutson,Consumer,East,Bronze
+86,FM-14290,Frank Merwin,Home Office,West,Silver
+87,AM-10360,Alice McCarthy,Corporate,Central,Silver
+88,MP-17470,Mark Packer,Home Office,East,Bronze
+89,MZ-17515,Mary Zewe,Corporate,West,Bronze
+90,CB-12025,Cassandra Brandow,Consumer,East,Silver
+91,VM-21685,Valerie Mitchum,Home Office,East,Silver
+92,FH-14365,Fred Hopkins,Corporate,East,Silver
+93,MB-17305,Maria Bertelson,Consumer,East,Silver
+94,BS-11755,Bruce Stewart,Consumer,West,Silver
+95,LC-17140,Logan Currie,Consumer,Central,Silver
+96,HK-14890,Heather Kirkland,Corporate,South,Silver
+97,LE-16810,Laurel Elliston,Consumer,West,Silver
+98,JH-15985,Joseph Holt,Consumer,Central,Bronze
+99,MS-17980,Michael Stewart,Corporate,Central,Silver
+100,VW-21775,Victoria Wilson,Corporate,East,Bronze
+101,JH-15910,Jonathan Howell,Consumer,West,Bronze
+102,JB-15925,Joni Blumstein,Consumer,East,Bronze
+103,DS-13180,David Smith,Corporate,Central,Silver
+104,VD-21670,Valerie Dominguez,Consumer,South,Silver
+105,EA-14035,Erin Ashbrook,Corporate,South,Bronze
+106,DB-13120,David Bremer,Corporate,West,Bronze
+107,KL-16645,Ken Lonsdale,Consumer,Central,Gold
+108,DW-13480,Dianna Wilson,Home Office,Central,Silver
+109,LH-17155,Logan Haushalter,Consumer,West,Bronze
+110,KC-16540,Kelly Collister,Consumer,West,Bronze
+111,DL-13315,Delfina Latchford,Consumer,East,Silver
+112,DR-12880,Dan Reichenbach,Corporate,Central,Gold
+113,CC-12670,Craig Carreira,Consumer,East,Silver
+114,Dl-13600,Dorris liebe,Corporate,Central,Bronze
+115,SB-20290,Sean Braxton,Corporate,Central,Bronze
+116,RC-19825,Roy Collins,Consumer,Central,Bronze
+117,AH-10210,Alan Hwang,Consumer,West,Silver
+118,CB-12535,Claudia Bergmann,Corporate,South,Silver
+119,CA-12310,Christine Abelman,Corporate,East,Silver
+120,KH-16690,Kristen Hastings,Corporate,West,Gold
+121,BB-10990,Barry Blumstein,Corporate,West,Bronze
+122,AG-10495,Andrew Gjertsen,Corporate,East,Silver
+123,JO-15280,Jas O'Carroll,Consumer,West,Bronze
+124,AH-10195,Alan Haines,Corporate,South,Bronze
+125,NZ-18565,Nick Zandusky,Home Office,East,Silver
+126,KL-16555,Kelly Lampkin,Corporate,West,Silver
+127,AS-10225,Alan Schoenberger,Corporate,East,Silver
+128,CR-12625,Corey Roper,Home Office,East,Bronze
+129,SH-20395,Shahid Hopkins,Consumer,South,Silver
+130,BP-11185,Ben Peterman,Corporate,West,Silver
+131,TS-21205,Thomas Seio,Corporate,East,Silver
+132,AG-10525,Andy Gerbode,Corporate,South,Bronze
+133,SP-20860,Sung Pak,Corporate,East,Silver
+134,NM-18445,Nathan Mautz,Home Office,East,Silver
+135,FA-14230,Frank Atkinson,Corporate,West,Silver
+136,GK-14620,Grace Kelly,Corporate,West,Silver
+137,DJ-13510,Don Jones,Corporate,South,Silver
+138,PO-18850,Patrick O'Brill,Consumer,East,Silver
+139,JL-15850,John Lucas,Consumer,East,Bronze
+140,DB-13615,Doug Bickford,Consumer,West,Silver
+141,AC-10420,Alyssa Crouse,Corporate,West,Bronze
+142,CC-12550,Clay Cheatham,Consumer,West,Bronze
+143,TD-20995,Tamara Dahlen,Consumer,East,Silver
+144,AB-10060,Adam Bellavance,Home Office,East,Silver
+145,JL-15505,Jeremy Lonsdale,Consumer,East,Silver
+146,VB-21745,Victoria Brennan,Corporate,South,Bronze
+147,KW-16435,Katrina Willman,Consumer,East,Silver
+148,JD-16060,Julia Dunbar,Consumer,West,Bronze
+149,MK-17905,Michael Kennedy,Corporate,East,Bronze
+150,GT-14755,Guy Thornton,Consumer,Central,Bronze
+151,AG-10900,Arthur Gainer,Consumer,West,Silver
+152,MM-18280,Muhammed MacIntyre,Corporate,Central,Bronze
+153,AR-10405,Allen Rosenblatt,Corporate,East,Bronze
+154,RA-19915,Russell Applegate,Consumer,Central,Silver
+155,AS-10285,Alejandro Savely,Corporate,West,Silver
+156,LA-16780,Laura Armstrong,Corporate,Central,Silver
+157,DO-13435,Denny Ordway,Consumer,South,Bronze
+158,DK-13225,Dean Katz,Corporate,East,Silver
+159,NG-18430,Nathan Gelder,Consumer,East,Bronze
+160,MV-18190,Mike Vittorini,Consumer,East,Silver
+161,JG-15115,Jack Garza,Consumer,West,Bronze
+162,BP-11095,Bart Pistole,Corporate,Central,Gold
+163,VP-21730,Victor Preis,Home Office,West,Bronze
+164,SS-20140,Saphhira Shifley,Corporate,East,Gold
+165,AG-10675,Anna Gayman,Consumer,Central,Bronze
+166,LF-17185,Luke Foster,Consumer,South,Silver
+167,RF-19840,Roy Französisch,Consumer,East,Silver
+168,KH-16510,Keith Herrera,Consumer,West,Gold
+169,KC-16675,Kimberly Carter,Corporate,West,Bronze
+170,CJ-12010,Caroline Jumper,Consumer,West,Silver
+171,PB-19150,Philip Brown,Consumer,West,Bronze
+172,MP-17965,Michael Paige,Corporate,East,Silver
+173,NF-18385,Natalie Fritzler,Consumer,South,Bronze
+174,SD-20485,Shirley Daniels,Home Office,East,Silver
+175,KH-16630,Ken Heidel,Corporate,Central,Silver
+176,RB-19795,Ross Baird,Home Office,South,Bronze
+177,MK-18160,Mike Kennedy,Consumer,South,Bronze
+178,PO-19180,Philisse Overcash,Home Office,Central,Silver
+179,BB-11545,Brenda Bowman,Corporate,Central,Gold
+180,TB-21595,Troy Blackwell,Consumer,Central,Bronze
+181,RB-19360,Raymond Buch,Consumer,East,Silver
+182,EB-13705,Ed Braxton,Corporate,East,Bronze
+183,SC-20095,Sanjit Chand,Consumer,West,Silver
+184,TN-21040,Tanja Norvell,Home Office,West,Bronze
+185,JS-15940,Joni Sundaresam,Home Office,Central,Bronze
+186,MH-17785,Maya Herman,Corporate,East,Bronze
+187,JP-15520,Jeremy Pistek,Consumer,West,Gold
+188,JE-15475,Jeremy Ellison,Consumer,East,Bronze
+189,JG-15805,John Grady,Corporate,East,Bronze
+190,XP-21865,Xylona Preis,Consumer,West,Silver
+191,EM-14065,Erin Mull,Consumer,East,Bronze
+192,MT-18070,Michelle Tran,Home Office,West,Bronze
+193,SA-20830,Sue Ann Reed,Consumer,Central,Silver
+194,CW-11905,Carl Weiss,Home Office,Central,Silver
+195,AJ-10960,Astrea Jones,Consumer,East,Bronze
+196,SS-20590,Sonia Sunley,Consumer,West,Bronze
+197,RO-19780,Rose O'Brian,Consumer,South,Bronze
+198,MD-17350,Maribeth Dona,Consumer,South,Bronze
+199,MY-17380,Maribeth Yedwab,Corporate,West,Silver
+200,CM-12385,Christopher Martinez,Consumer,South,Silver
+201,LS-17245,Lynn Smith,Consumer,Central,Silver
+202,BN-11515,Bradley Nguyen,Consumer,West,Silver
+203,DB-13210,Dean Braden,Consumer,Central,Silver
+204,MC-17605,Matt Connell,Corporate,Central,Bronze
+205,BD-11605,Brian Dahlen,Consumer,East,Silver
+206,PH-18790,Patricia Hirasaki,Home Office,South,Bronze
+207,MG-18145,Mike Gockenbach,Consumer,East,Bronze
+208,KB-16240,Karen Bern,Corporate,West,Silver
+209,JC-15340,Jasper Cacioppo,Consumer,West,Bronze
+210,RL-19615,Rob Lucas,Consumer,South,Silver
+211,AA-10375,Allen Armold,Consumer,West,Silver
+212,EP-13915,Emily Phan,Consumer,Central,Silver
+213,DK-12985,Darren Koutras,Consumer,South,Bronze
+214,BD-11500,Bradley Drucker,Consumer,Central,Silver
+215,LM-17065,Liz MacKendrick,Consumer,East,Bronze
+216,AS-10135,Adrian Shami,Home Office,East,Bronze
+217,BD-11320,Bill Donatelli,Consumer,West,Gold
+218,GT-14710,Greg Tran,Consumer,Central,Gold
+219,AJ-10945,Ashley Jarboe,Consumer,South,Bronze
+220,OT-18730,Olvera Toch,Consumer,West,Bronze
+221,LP-17080,Liz Pelletier,Consumer,West,Bronze
+222,CA-12775,Cynthia Arntzen,Consumer,South,Bronze
+223,JF-15490,Jeremy Farry,Consumer,West,Bronze
+224,FP-14320,Frank Preis,Consumer,West,Silver
+225,EB-13840,Ellis Ballard,Corporate,West,Bronze
+226,JF-15415,Jennifer Ferguson,Consumer,East,Silver
+227,SF-20200,Sarah Foster,Consumer,West,Silver
+228,TG-21640,Trudy Glocke,Consumer,West,Bronze
+229,CS-11950,Carlos Soltero,Consumer,Central,Silver
+230,CC-12145,Charles Crestani,Consumer,West,Bronze
+231,DV-13465,Dianna Vittorini,Consumer,West,Silver
+232,BD-11725,Bruce Degenhardt,Consumer,South,Bronze
+233,ZC-21910,Zuschuss Carroll,Consumer,West,Bronze
+234,MS-17830,Melanie Seite,Consumer,Central,Bronze
+235,LR-16915,Lena Radford,Consumer,West,Silver
+236,TP-21130,Theone Pippenger,Consumer,East,Gold
+237,CK-12205,Chloris Kastensmidt,Consumer,East,Silver
+238,AS-10240,Alan Shonely,Consumer,South,Bronze
+239,AR-10510,Andrew Roberts,Consumer,East,Bronze
+240,NB-18655,Nona Balk,Corporate,Central,Silver
+241,GD-14590,Giulietta Dortch,Corporate,East,Bronze
+242,CK-12595,Clytie Kelty,Consumer,East,Silver
+243,NG-18355,Nat Gilpin,Corporate,East,Silver
+244,CA-12265,Christina Anderson,Consumer,Central,Silver
+245,SF-20965,Sylvia Foulston,Corporate,Central,Silver
+246,MO-17800,Meg O'Connel,Home Office,East,Bronze
+247,AT-10735,Annie Thurman,Consumer,West,Gold
+248,FM-14380,Fred McMath,Consumer,West,Bronze
+249,DJ-13420,Denny Joy,Corporate,South,Bronze
+250,ME-17725,Max Engle,Consumer,West,Bronze
+251,JD-16150,Justin Deggeller,Corporate,Central,Silver
+252,JL-15835,John Lee,Consumer,West,Silver
+253,SC-20305,Sean Christensen,Consumer,Central,Silver
+254,CC-12430,Chuck Clark,Home Office,Central,Gold
+255,AR-10825,Anthony Rawles,Corporate,West,Silver
+256,SR-20740,Steven Roelle,Home Office,East,Silver
+257,CR-12730,Craig Reiter,Consumer,East,Bronze
+258,EH-14125,Eugene Hildebrand,Home Office,Central,Bronze
+259,SP-20545,Sibella Parks,Corporate,East,Bronze
+260,TH-21235,Tiffany House,Corporate,Central,Bronze
+261,RP-19390,Resi Pölking,Consumer,East,Silver
+262,RB-19570,Rob Beeghly,Consumer,Central,Bronze
+263,CD-11980,Carol Darley,Consumer,Central,Bronze
+264,DJ-13630,Doug Jacobs,Consumer,East,Silver
+265,GT-14635,Grant Thornton,Corporate,South,Bronze
+266,MC-17845,Michael Chen,Consumer,South,Gold
+267,RA-19285,Ralph Arnett,Consumer,East,Silver
+268,NP-18325,Naresj Patel,Consumer,South,Gold
+269,AB-10165,Alan Barnes,Consumer,West,Silver
+270,JO-15550,Jesus Ocampo,Home Office,East,Bronze
+271,JK-15370,Jay Kimmel,Consumer,West,Silver
+272,BN-11470,Brad Norvell,Corporate,South,Bronze
+273,DP-13165,David Philippe,Consumer,East,Bronze
+274,TH-21550,Tracy Hopkins,Home Office,East,Bronze
+275,AP-10915,Arthur Prichep,Consumer,South,Silver
+276,RS-19765,Roland Schwarz,Corporate,East,Silver
+277,SV-20365,Seth Vernon,Consumer,East,Silver
+278,CK-12325,Christine Kargatis,Home Office,West,Bronze
+279,RD-19810,Ross DeVincentis,Home Office,West,Silver
+280,MR-17545,Mathew Reese,Home Office,East,Bronze
+281,SC-20695,Steve Chapman,Corporate,South,Silver
+282,JF-15355,Jay Fein,Consumer,Central,Silver
+283,EG-13900,Emily Grady,Consumer,East,Bronze
+284,DS-13030,Darrin Sayre,Home Office,West,Silver
+285,PO-19195,Phillina Ober,Home Office,Central,Bronze
+286,SS-20875,Sung Shariari,Consumer,Central,Bronze
+287,PB-19105,Peter Bühler,Consumer,Central,Bronze
+288,RF-19735,Roland Fjeld,Consumer,Central,Silver
+289,YC-21895,Yoseph Carroll,Corporate,West,Silver
+290,DC-13285,Debra Catini,Consumer,Central,Bronze
+291,CP-12340,Christine Phan,Corporate,East,Bronze
+292,BF-11020,Barry Französisch,Corporate,Central,Silver
+293,LH-17020,Lisa Hazard,Consumer,East,Bronze
+294,CS-12250,Chris Selesnick,Corporate,South,Gold
+295,AJ-10795,Anthony Johnson,Corporate,South,Silver
+296,BV-11245,Benjamin Venier,Corporate,Central,Bronze
+297,DL-12865,Dan Lawera,Consumer,East,Silver
+298,BM-11785,Bryan Mills,Consumer,East,Bronze
+299,LT-17110,Liz Thompson,Consumer,West,Silver
+300,JK-15730,Joe Kamberova,Consumer,South,Silver
+301,ES-14020,Erica Smith,Consumer,West,Silver
+302,RH-19495,Rick Hansen,Consumer,Central,Silver
+303,CD-11920,Carlos Daly,Consumer,West,Silver
+304,HW-14935,Helen Wasserman,Corporate,West,Silver
+305,MC-18130,Mike Caudle,Corporate,South,Bronze
+306,GM-14440,Gary McGarr,Consumer,West,Silver
+307,PJ-19015,Pauline Johnson,Consumer,West,Bronze
+308,BW-11110,Bart Watters,Corporate,Central,Silver
+309,TR-21325,Toby Ritter,Consumer,East,Bronze
+310,PG-18820,Patrick Gardner,Consumer,West,Silver
+311,JL-15175,James Lanier,Home Office,South,Bronze
+312,BM-11650,Brian Moss,Corporate,East,Gold
+313,EM-14095,Eudokia Martin,Corporate,West,Bronze
+314,AF-10885,Art Foster,Consumer,South,Bronze
+315,GA-14725,Guy Armstrong,Consumer,East,Silver
+316,CK-12760,Cyma Kinney,Corporate,East,Bronze
+317,DP-13105,Dave Poirier,Corporate,West,Silver
+318,BK-11260,Berenike Kampe,Consumer,East,Bronze
+319,SJ-20125,Sanjit Jacobs,Home Office,East,Silver
+320,CM-12445,Chuck Magee,Consumer,West,Bronze
+321,AJ-10780,Anthony Jacobs,Corporate,South,Bronze
+322,LS-16945,Linda Southworth,Corporate,East,Bronze
+323,GP-14740,Guy Phonely,Corporate,East,Bronze
+324,PK-18910,Paul Knutson,Home Office,East,Bronze
+325,SM-20005,Sally Matthias,Consumer,East,Bronze
+326,AG-10765,Anthony Garverick,Home Office,East,Bronze
+327,PM-19135,Peter McVee,Home Office,Central,Bronze
+328,LL-16840,Lauren Leatherbury,Consumer,East,Bronze
+329,JS-15595,Jill Stevenson,Corporate,West,Bronze
+330,EL-13735,Ed Ludwig,Home Office,East,Bronze
+331,PC-18745,Pamela Coakley,Corporate,West,Bronze
+332,HL-15040,Hunter Lopez,Consumer,Central,Silver
+333,MS-17365,Maribeth Schnelling,Consumer,Central,Silver
+334,GB-14530,George Bell,Corporate,East,Silver
+335,JR-16210,Justin Ritter,Corporate,East,Silver
+336,BE-11335,Bill Eplett,Home Office,Central,Bronze
+337,SC-20050,Sample Company A,Home Office,East,Silver
+338,RW-19630,Rob Williams,Corporate,Central,Silver
+339,SE-20110,Sanjit Engle,Consumer,East,Gold
+340,AH-10075,Adam Hart,Corporate,East,Silver
+341,JM-15535,Jessica Myrick,Consumer,East,Bronze
+342,JJ-15760,Joel Jenkins,Home Office,South,Bronze
+343,RK-19300,Ralph Kennedy,Consumer,East,Bronze
+344,CG-12040,Catherine Glotzbach,Home Office,East,Bronze
+345,RP-19270,Rachel Payne,Corporate,West,Bronze
+346,KC-16255,Karen Carlisle,Corporate,West,Bronze
+347,KH-16360,Katherine Hughes,Consumer,East,Silver
+348,GH-14665,Greg Hansen,Consumer,Central,Bronze
+349,SW-20275,Scott Williamson,Consumer,South,Bronze
+350,JA-15970,Joseph Airdo,Consumer,West,Bronze
+351,DL-12925,Daniel Lacy,Consumer,West,Bronze
+352,LW-16990,Lindsay Williams,Corporate,West,Silver
+353,TB-21190,Thomas Brumley,Home Office,South,Bronze
+354,BS-11800,Bryan Spruell,Home Office,East,Bronze
+355,RW-19690,Robert Waldorf,Consumer,South,Silver
+356,TZ-21580,Tracy Zic,Consumer,West,Bronze
+357,AS-10630,Ann Steele,Home Office,Central,Bronze
+358,TS-21340,Toby Swindell,Consumer,Central,Bronze
+359,SL-20155,Sara Luxemburg,Home Office,South,Bronze
+360,MW-18235,Mitch Willingham,Corporate,South,Silver
+361,RD-19585,Rob Dowd,Consumer,South,Silver
+362,RA-19945,Ryan Akin,Consumer,West,Bronze
+363,MT-17815,Meg Tillman,Consumer,West,Silver
+364,VG-21790,Vivek Gonzalez,Consumer,West,Bronze
+365,JS-15880,John Stevenson,Consumer,West,Bronze
+366,KM-16225,Kalyca Meade,Corporate,East,Gold
+367,HR-14770,Hallie Redmond,Home Office,West,Silver
+368,DE-13255,Deanra Eno,Home Office,East,Bronze
+369,AG-10390,Allen Goldenen,Consumer,East,Bronze
+370,JJ-15445,Jennifer Jackson,Consumer,West,Bronze
+371,JH-15430,Jennifer Halladay,Consumer,South,Bronze
+372,RD-19660,Robert Dilbeck,Home Office,Central,Bronze
+373,MO-17500,Mary O'Rourke,Consumer,East,Bronze
+374,NS-18640,Noel Staavos,Corporate,Central,Bronze
+375,DG-13300,Deirdre Greer,Corporate,East,Silver
+376,NF-18595,Nicole Fjeld,Home Office,East,Bronze
+377,MG-17650,Matthew Grinstein,Home Office,East,Silver
+378,TS-21160,Theresa Swint,Corporate,East,Bronze
+379,BD-11620,Brian DeCherney,Consumer,West,Bronze
+380,CM-12160,Charles McCrossin,Consumer,Central,Bronze
+381,SN-20560,Skye Norling,Home Office,West,Bronze
+382,EH-14005,Erica Hernandez,Home Office,West,Bronze
+383,FO-14305,Frank Olsen,Consumer,East,Silver
+384,MS-17710,Maurice Satty,Consumer,West,Bronze
+385,CC-12100,Chad Cunningham,Home Office,Central,Bronze
+386,DW-13540,Don Weiss,Consumer,West,Bronze
+387,BT-11395,Bill Tyler,Corporate,Central,Bronze
+388,CY-12745,Craig Yedwab,Corporate,West,Bronze
+389,BT-11485,Brad Thomas,Home Office,East,Bronze
+390,PS-19045,Penelope Sewall,Home Office,South,Bronze
+391,PV-18985,Paul Van Hugh,Home Office,West,Silver
+392,NM-18520,Neoma Murray,Consumer,West,Silver
+393,DL-13495,Dionis Lloyd,Corporate,West,Bronze
+394,CS-12355,Christine Sundaresam,Consumer,South,Gold
+395,FH-14275,Frank Hawley,Corporate,Central,Gold
+396,NC-18340,Nat Carroll,Consumer,Central,Silver
+397,AA-10315,Alex Avila,Consumer,Central,Bronze
+398,LT-16765,Larry Tron,Consumer,West,Bronze
+399,AP-10720,Anne Pryor,Home Office,East,Silver
+400,PM-18940,Paul MacIntyre,Consumer,Central,Bronze
+401,AT-10435,Alyssa Tate,Home Office,West,Bronze
+402,CA-12055,Cathy Armstrong,Home Office,Central,Bronze
+403,HR-14830,Harold Ryan,Corporate,West,Silver
+404,BT-11530,Bradley Talbott,Home Office,West,Bronze
+405,LH-16750,Larry Hughes,Consumer,South,Bronze
+406,SW-20755,Steven Ward,Corporate,East,Bronze
+407,SP-20620,Stefania Perrino,Corporate,East,Silver
+408,BF-11170,Ben Ferrer,Home Office,West,Gold
+409,KT-16480,Kean Thornton,Consumer,East,Bronze
+410,BG-11695,Brooke Gillingham,Corporate,East,Bronze
+411,GM-14680,Greg Matthias,Consumer,West,Bronze
+412,EJ-14155,Eva Jacobs,Consumer,South,Bronze
+413,NP-18700,Nora Preis,Consumer,West,Bronze
+414,MH-18115,Mick Hernandez,Home Office,East,Silver
+415,JR-15700,Jocasta Rupert,Consumer,South,Bronze
+416,SM-20950,Suzanne McNair,Corporate,South,Gold
+417,CC-12220,Chris Cortes,Consumer,Central,Gold
+418,PF-19225,Phillip Flathmann,Consumer,West,Bronze
+419,DC-12850,Dan Campbell,Consumer,South,Bronze
+420,BD-11770,Bryan Davis,Consumer,Central,Bronze
+421,GM-14500,Gene McClure,Consumer,East,Bronze
+422,TB-21355,Todd Boyes,Corporate,East,Bronze
+423,JH-16180,Justin Hirsh,Consumer,West,Bronze
+424,EB-13975,Erica Bern,Corporate,West,Bronze
+425,QJ-19255,Quincy Jones,Corporate,Central,Silver
+426,TC-21535,Tracy Collins,Home Office,South,Silver
+427,CS-12460,Chuck Sachs,Consumer,South,Bronze
+428,HG-14965,Henry Goldwyn,Corporate,West,Silver
+429,LW-16825,Laurel Workman,Corporate,South,Bronze
+430,MC-17575,Matt Collins,Consumer,East,Silver
+431,LP-17095,Liz Preis,Consumer,South,Silver
+432,EB-14170,Evan Bailliet,Consumer,South,Bronze
+433,GZ-14545,George Zrebassa,Corporate,East,Bronze
+434,CP-12085,Cathy Prescott,Corporate,East,Silver
+435,FG-14260,Frank Gastineau,Home Office,West,Silver
+436,LD-17005,Lisa DeCherney,Consumer,West,Bronze
+437,AB-10255,Alejandro Ballentine,Home Office,East,Bronze
+438,MN-17935,Michael Nguyen,Consumer,Central,Bronze
+439,JR-15670,Jim Radford,Consumer,East,Bronze
+440,JF-15190,Jamie Frazer,Consumer,West,Silver
+441,CM-12115,Chad McGuire,Consumer,East,Silver
+442,AS-10045,Aaron Smayling,Corporate,South,Bronze
+443,BP-11290,Beth Paige,Consumer,Central,Silver
+444,ND-18370,Natalie DeCherney,Consumer,South,Silver
+445,LB-16735,Larry Blacks,Consumer,Central,Bronze
+446,KT-16465,Kean Takahito,Consumer,West,Bronze
+447,HM-14860,Harry Marie,Corporate,East,Gold
+448,AB-10600,Ann Blume,Corporate,West,Bronze
+449,SZ-20035,Sam Zeldin,Home Office,West,Silver
+450,MG-17890,Michael Granlund,Home Office,East,Bronze
+451,JK-16120,Julie Kriz,Home Office,Central,Bronze
+452,PP-18955,Paul Prost,Home Office,South,Silver
+453,YS-21880,Yana Sorensen,Corporate,South,Silver
+454,KM-16375,Katherine Murray,Home Office,South,Silver
+455,AB-10105,Adrian Barton,Consumer,West,Gold
+456,HA-14905,Helen Abelman,Consumer,East,Bronze
+457,BT-11305,Beth Thompson,Home Office,West,Bronze
+458,SV-20815,Stuart Van,Corporate,Central,Bronze
+459,RW-19540,Rick Wilson,Corporate,West,Silver
+460,DK-12835,Damala Kotsonis,Corporate,West,Gold
+461,ST-20530,Shui Tom,Consumer,East,Bronze
+462,MM-17920,Michael Moore,Consumer,West,Silver
+463,PW-19030,Pauline Webber,Corporate,South,Silver
+464,SC-20440,Shaun Chance,Corporate,West,Silver
+465,TS-21085,Thais Sissman,Consumer,West,Bronze
+466,MC-17425,Mark Cousins,Corporate,South,Bronze
+467,ME-17320,Maria Etezadi,Home Office,South,Gold
+468,NH-18610,Nicole Hansen,Corporate,Central,Silver
+469,MB-18085,Mick Brown,Consumer,East,Bronze
+470,KD-16495,Keith Dawkins,Corporate,East,Silver
+471,KN-16390,Katherine Nockton,Corporate,West,Silver
+472,NP-18685,Nora Pelletier,Home Office,East,Bronze
+473,CS-12505,Cindy Stewart,Consumer,South,Bronze
+474,MS-17770,Maxwell Schwartz,Consumer,East,Silver
+475,CM-12655,Corinna Mitchell,Home Office,West,Silver
+476,Co-12640,Corey-Lock,Consumer,East,Bronze
+477,TS-21370,Todd Sumrall,Corporate,East,Silver
+478,JW-15220,Jane Waco,Corporate,West,Silver
+479,JD-15790,John Dryer,Consumer,Central,Bronze
+480,PC-19000,Pauline Chand,Home Office,West,Bronze
+481,AR-10540,Andy Reiter,Consumer,East,Silver
+482,AI-10855,Arianne Irving,Consumer,East,Gold
+483,TB-21400,Tom Boeckenhauer,Consumer,West,Silver
+484,PL-18925,Paul Lucas,Home Office,Central,Bronze
+485,GH-14425,Gary Hwang,Consumer,West,Silver
+486,MP-18175,Mike Pelletier,Home Office,West,Silver
+487,JM-15655,Jim Mitchum,Corporate,East,Silver
+488,CL-11890,Carl Ludwig,Consumer,East,Bronze
+489,DB-13270,Deborah Brumfield,Home Office,West,Silver
+490,IG-15085,Ivan Gibson,Consumer,West,Bronze
+491,BO-11425,Bobby Odegard,Consumer,South,Bronze
+492,AB-10150,Aimee Bixby,Consumer,East,Silver
+493,JW-16075,Julia West,Consumer,East,Bronze
+494,EB-13750,Edward Becker,Corporate,West,Silver
+495,SG-20470,Sheri Gordon,Consumer,East,Bronze
+496,CM-12190,Charlotte Melton,Consumer,East,Bronze
+497,AW-10840,Anthony Witt,Consumer,Central,Bronze
+498,MC-18100,Mick Crebagga,Consumer,Central,Silver
+499,TT-21460,Tonja Turnell,Home Office,Central,Gold
+500,VG-21805,Vivek Grady,Corporate,South,Bronze
+501,MY-18295,Muhammed Yedwab,Corporate,Central,Bronze
+502,RD-19480,Rick Duston,Consumer,West,Silver
+503,DP-13390,Dennis Pardue,Home Office,Central,Silver
+504,ML-17395,Marina Lichtenstein,Corporate,West,Silver
+505,JC-15385,Jenna Caffey,Consumer,West,Bronze
+506,JG-15160,James Galang,Consumer,West,Gold
+507,MC-17275,Marc Crier,Consumer,South,Silver
+508,NW-18400,Natalie Webber,Consumer,West,Silver
+509,TB-21280,Toby Braunhardt,Consumer,East,Bronze
+510,BS-11380,Bill Stewart,Corporate,Central,Bronze
+511,HH-15010,Hilary Holden,Corporate,West,Bronze
+512,CD-12280,Christina DeMoss,Consumer,West,Silver
+513,TH-21100,Thea Hendricks,Consumer,West,Bronze
+514,MM-18055,Michelle Moray,Consumer,West,Bronze
+515,NS-18505,Neola Schneider,Consumer,Central,Silver
+516,RB-19645,Robert Barroso,Corporate,West,Bronze
+517,SW-20455,Shaun Weien,Consumer,South,Bronze
+518,EB-13930,Eric Barreto,Consumer,West,Bronze
+519,PS-18760,Pamela Stobb,Consumer,West,Bronze
+520,HF-14995,Herbert Flentye,Consumer,Central,Silver
+521,HZ-14950,Henia Zydlo,Consumer,East,Bronze
+522,CD-12790,Cynthia Delaney,Home Office,West,Bronze
+523,JK-15205,Jamie Kunitz,Consumer,West,Silver
+524,FM-14215,Filia McAdams,Corporate,East,Silver
+525,ED-13885,Emily Ducich,Home Office,West,Silver
+526,DA-13450,Dianna Arnett,Home Office,Central,Bronze
+527,JW-15955,Joni Wasserman,Consumer,West,Bronze
+528,RM-19375,Raymond Messe,Consumer,Central,Bronze
+529,ML-17755,Max Ludwig,Home Office,South,Silver
+530,CC-12685,Craig Carroll,Consumer,South,Bronze
+531,JE-15610,Jim Epp,Corporate,Central,Gold
+532,RP-19855,Roy Phan,Corporate,Central,Silver
+533,TB-21175,Thomas Boland,Corporate,Central,Silver
+534,BE-11455,Brad Eason,Home Office,Central,Bronze
+535,JF-15565,Jill Fjeld,Consumer,Central,Silver
+536,PB-19210,Phillip Breyer,Corporate,Central,Bronze
+537,BT-11680,Brian Thompson,Consumer,East,Gold
+538,JL-15235,Janet Lee,Consumer,Central,Bronze
+539,CH-12070,Cathy Hwang,Home Office,South,Bronze
+540,ND-18460,Neil Ducich,Corporate,South,Bronze
+541,BF-10975,Barbara Fisher,Corporate,South,Bronze
+542,KH-16330,Katharine Harms,Corporate,South,Silver
+543,GW-14605,Giulietta Weimer,Consumer,West,Bronze
+544,NC-18625,Noah Childs,Corporate,West,Bronze
+545,ME-18010,Michelle Ellison,Corporate,West,Bronze
+546,BP-11230,Benjamin Patterson,Consumer,West,Bronze
+547,JC-15775,John Castell,Consumer,Central,Bronze
+548,AS-10090,Adam Shillingsburg,Consumer,South,Silver
+549,AC-10450,Amy Cox,Consumer,Central,Silver
+550,MD-17860,Michael Dominguez,Corporate,Central,Bronze
+551,DB-13660,Duane Benoit,Consumer,East,Silver
+552,EH-13990,Erica Hackney,Consumer,South,Bronze
+553,EH-13765,Edward Hooks,Corporate,East,Silver
+554,SC-20230,Scot Coram,Corporate,Central,Bronze
+555,JE-15715,Joe Elijah,Consumer,West,Gold
+556,AC-10615,Ann Chong,Corporate,East,Silver
+557,JD-16015,Joy Daniels,Consumer,Central,Bronze
+558,CB-12415,Christy Brittain,Consumer,East,Silver
+559,JS-16030,Joy Smith,Consumer,Central,Bronze
+560,LW-17215,Luke Weiss,Consumer,West,Gold
+561,SC-20800,Stuart Calhoun,Consumer,Central,Bronze
+562,AM-10705,Anne McFarland,Consumer,South,Silver
+563,RH-19510,Rick Huthwaite,Home Office,East,Bronze
+564,CT-11995,Carol Triggs,Consumer,Central,Silver
+565,MC-17590,Matt Collister,Corporate,East,Silver
+566,CC-12610,Corey Catlett,Corporate,East,Silver
+567,KA-16525,Kelly Andreada,Consumer,West,Silver
+568,TC-20980,Tamara Chand,Corporate,West,Bronze
+569,BF-11080,Bart Folk,Consumer,East,Bronze
+570,MM-17260,Magdelene Morse,Consumer,East,Bronze
+571,AH-10120,Adrian Hane,Home Office,West,Bronze
+572,BW-11200,Ben Wallace,Consumer,South,Bronze
+573,SW-20245,Scot Wooten,Consumer,West,Bronze
+574,BS-11665,Brian Stugart,Consumer,East,Bronze
+575,RF-19345,Randy Ferguson,Corporate,East,Bronze
+576,WB-21850,William Brown,Consumer,East,Gold
+577,TB-21625,Trudy Brown,Consumer,Central,Silver
+578,AF-10870,Art Ferguson,Consumer,Central,Silver
+579,RB-19435,Richard Bierner,Consumer,Central,Silver
+580,KF-16285,Karen Ferguson,Home Office,West,Silver
+581,JH-15820,John Huston,Consumer,East,Bronze
+582,IL-15100,Ivan Liston,Consumer,West,Silver
+583,PB-18805,Patrick Bzostek,Home Office,West,Silver
+584,RH-19600,Rob Haberlin,Consumer,South,Bronze
+585,AW-10930,Arthur Wiediger,Home Office,Central,Bronze
+586,ML-17410,Maris LaWare,Consumer,East,Bronze
+587,DB-13555,Dorothy Badders,Corporate,South,Bronze
+588,MH-17620,Matt Hagelstein,Corporate,West,Bronze
+589,DK-13375,Dennis Kane,Consumer,East,Gold
+590,BT-11440,Bobby Trafton,Consumer,West,Bronze
+591,DB-13405,Denny Blanton,Consumer,Central,Silver
+592,TG-21310,Toby Gnade,Consumer,West,Bronze
+593,BF-11005,Barry Franz,Home Office,West,Bronze
+594,JM-16195,Justin MacKendrick,Consumer,West,Silver
+595,MZ-17335,Maria Zettner,Home Office,West,Bronze
+596,MW-18220,Mitch Webber,Consumer,East,Gold
+597,MV-17485,Mark Van Huff,Consumer,South,Silver
+598,SM-20320,Sean Miller,Home Office,South,Bronze
+599,TP-21415,Tom Prescott,Consumer,West,Bronze
+600,JK-15625,Jim Karlsson,Consumer,West,Silver
+601,PJ-18835,Patrick Jones,Corporate,South,Silver
+602,RS-19420,Ricardo Sperren,Corporate,West,Bronze
+603,SV-20935,Susan Vittorini,Consumer,East,Silver
+604,BC-11125,Becky Castell,Home Office,West,Bronze
+605,EM-13825,Elizabeth Moffitt,Corporate,Central,Silver
+606,BM-11575,Brendan Murry,Corporate,East,Bronze
+607,KN-16705,Kristina Nunn,Home Office,West,Silver
+608,KW-16570,Kelly Williams,Consumer,South,Bronze
+609,SC-20260,Scott Cohen,Corporate,West,Silver
+610,CV-12295,Christina VanderZanden,Consumer,West,Bronze
+611,SG-20605,Speros Goranitis,Consumer,East,Bronze
+612,TM-21010,Tamara Manning,Consumer,West,Silver
+613,EM-13810,Eleni McCrary,Corporate,West,Bronze
+614,ML-18040,Michelle Lonsdale,Corporate,West,Bronze
+615,CR-12580,Clay Rozendal,Home Office,Central,Bronze
+616,AZ-10750,Annie Zypern,Consumer,East,Bronze
+617,PW-19240,Pierre Wener,Consumer,West,Bronze
+618,SC-20380,Shahid Collister,Consumer,West,Silver
+619,CM-11935,Carlos Meador,Consumer,South,Bronze
+620,GM-14695,Greg Maxwell,Corporate,West,Bronze
+621,TB-21250,Tim Brockman,Consumer,East,Bronze
+622,JM-15865,John Murray,Consumer,East,Silver
+623,SC-20575,Sonia Cooley,Consumer,Central,Bronze
+624,LS-17200,Luke Schmidt,Corporate,Central,Silver
+625,RR-19315,Ralph Ritter,Consumer,West,Bronze
+626,DB-12910,Daniel Byrd,Home Office,South,Silver
+627,TT-21220,Thomas Thornton,Consumer,Central,Bronze
+628,LO-17170,Lori Olson,Corporate,West,Bronze
+629,KD-16615,Ken Dana,Corporate,West,Bronze
+630,NB-18580,Nicole Brennan,Corporate,East,Bronze
+631,BD-11635,Brian Derr,Consumer,South,Bronze
+632,CM-12235,Chris McAfee,Consumer,Central,Bronze
+633,EN-13780,Edward Nazzal,Consumer,East,Bronze
+634,KN-16450,Kean Nguyen,Corporate,South,Bronze
+635,BO-11350,Bill Overfelt,Corporate,West,Bronze
+636,AG-10300,Aleksandra Gannaway,Corporate,West,Bronze
+637,MC-17635,Matthew Clasen,Corporate,Central,Bronze
+638,TA-21385,Tom Ashbrook,Home Office,East,Silver
+639,JF-15295,Jason Fortune-,Consumer,West,Bronze
+640,TT-21265,Tim Taslimi,Corporate,West,Bronze
+641,SB-20170,Sarah Bern,Consumer,East,Bronze
+642,CL-12700,Craig Leslie,Home Office,Central,Bronze
+643,HG-15025,Hunter Glantz,Consumer,Central,Silver
+644,NL-18310,Nancy Lomonaco,Home Office,West,Bronze
+645,RR-19525,Rick Reed,Corporate,East,Bronze
+646,TC-21295,Toby Carlisle,Consumer,West,Silver
+647,SV-20785,Stewart Visinsky,Consumer,West,Silver
+648,BE-11410,Bobby Elias,Consumer,East,Bronze
+649,SC-20680,Steve Carroll,Home Office,South,Bronze
+650,DF-13135,David Flashing,Consumer,West,Bronze
+651,FH-14350,Fred Harton,Consumer,West,Silver
+652,MS-17530,MaryBeth Skach,Consumer,West,Bronze
+653,RH-19555,Ritsa Hightower,Consumer,South,Bronze
+654,GA-14515,George Ashbrook,Consumer,West,Silver
+655,JP-16135,Julie Prescott,Home Office,South,Bronze
+656,Dp-13240,Dean percer,Home Office,West,Silver
+657,MO-17950,Michael Oakman,Consumer,Central,Bronze
+658,DL-13330,Denise Leinenbach,Consumer,West,Bronze
+659,MH-18025,Michelle Huthwaite,Consumer,West,Silver
+660,DR-12940,Daniel Raglin,Home Office,East,Silver
+661,DM-13015,Darrin Martin,Consumer,West,Silver
+662,CA-11965,Carol Adams,Corporate,South,Silver
+663,AC-10660,Anna Chung,Consumer,Central,Bronze
+664,DM-13345,Denise Monton,Corporate,South,Silver
+665,VF-21715,Vicky Freymann,Home Office,Central,Bronze
+666,CC-12370,Christopher Conant,Consumer,South,Silver
+667,BF-11275,Beth Fritzler,Corporate,West,Bronze
+668,HG-14845,Harry Greene,Consumer,South,Bronze
+669,BP-11155,Becky Pak,Consumer,South,Silver
+670,EM-14140,Eugene Moren,Home Office,West,Gold
+671,MA-17995,Michelle Arnett,Home Office,East,Bronze
+672,AY-10555,Andy Yotov,Corporate,West,Bronze
+673,GB-14575,Giulietta Baptist,Consumer,East,Gold
+674,JB-16045,Julia Barnett,Home Office,South,Silver
+675,MG-17875,Michael Grace,Home Office,East,Bronze
+676,SR-20425,Sharelle Roach,Home Office,West,Bronze
+677,JB-16000,Joy Bell-,Consumer,Central,Bronze
+678,DM-12955,Dario Medina,Corporate,Central,Bronze
+679,TC-21475,Tony Chapman,Home Office,South,Bronze
+680,SW-20350,Sean Wendt,Home Office,Central,Bronze
+681,RE-19450,Richard Eichhorn,Consumer,Central,Bronze
+682,BF-11215,Benjamin Farhat,Home Office,West,Bronze
+683,KB-16405,Katrina Bavinger,Home Office,West,Bronze
+684,JG-15310,Jason Gross,Corporate,East,Silver
+685,EC-14050,Erin Creighton,Consumer,East,Bronze
+686,EB-14110,Eugene Barchas,Consumer,East,Bronze
+687,JP-15460,Jennifer Patt,Corporate,East,Silver
+688,CS-11845,Cari Sayre,Corporate,West,Bronze
+689,GH-14410,Gary Hansen,Home Office,West,Bronze
+690,PT-19090,Pete Takahito,Consumer,Central,Bronze
+691,JL-15130,Jack Lebron,Consumer,Central,Bronze
+692,AH-10030,Aaron Hawkins,Corporate,East,Silver
+693,CC-12475,Cindy Chapman,Consumer,East,Silver
+694,DW-13195,David Wiener,Corporate,Central,Bronze
+695,SJ-20215,Sarah Jordon,Consumer,Central,Bronze
+696,BG-11740,Bruce Geld,Consumer,East,Bronze
+697,LB-16795,Laurel Beltran,Home Office,Central,Bronze
+698,CM-11815,Candace McMahon,Corporate,Central,Bronze
+699,EH-14185,Evan Henry,Consumer,South,Bronze
+700,TS-21505,Tony Sayre,Consumer,South,Silver
+701,PR-18880,Patrick Ryan,Consumer,West,Silver
+702,LC-17050,Liz Carlisle,Consumer,West,Bronze
+703,CS-12490,Cindy Schnelling,Corporate,Central,Bronze
+704,DH-13075,Dave Hallsten,Corporate,South,Silver
+705,JO-15145,Jack O'Briant,Corporate,East,Silver
+706,AH-10690,Anna Häberlin,Corporate,East,Silver
+707,HJ-14875,Heather Jas,Home Office,South,Bronze
+708,MH-17455,Mark Hamilton,Consumer,South,Silver
+709,RD-19930,Russell D'Ascenzo,Consumer,Central,Bronze
+710,SC-20020,Sam Craven,Consumer,Central,Bronze
+711,SU-20665,Stephanie Ulpright,Home Office,South,Gold
+712,FC-14335,Fred Chung,Corporate,Central,Bronze
+713,RB-19330,Randy Bradley,Consumer,East,Bronze
+714,NC-18535,Nick Crebassa,Corporate,Central,Gold
+715,DB-12970,Darren Budd,Corporate,West,Bronze
+716,MF-17665,Maureen Fritzler,Corporate,East,Bronze
+717,RM-19750,Roland Murray,Consumer,East,Bronze
+718,VM-21835,Vivian Mathis,Consumer,East,Bronze
+719,EJ-13720,Ed Jacobs,Consumer,West,Bronze
+720,NC-18415,Nathan Cano,Consumer,South,Bronze
+721,LS-17230,Lycoris Saunders,Consumer,East,Bronze
+722,KE-16420,Katrina Edelman,Corporate,South,Silver
+723,DH-13675,Duane Huffman,Home Office,East,Bronze
+724,PF-19120,Peter Fuller,Consumer,West,Bronze
+725,VT-21700,Valerie Takahito,Home Office,East,Bronze
+726,MG-17695,Maureen Gnade,Consumer,East,Bronze
+727,SP-20920,Susan Pistek,Consumer,West,Bronze
+728,CS-12175,Charles Sheldon,Corporate,South,Bronze
+729,DK-12895,Dana Kaydos,Consumer,Central,Silver
+730,KM-16660,Khloe Miller,Consumer,South,Bronze
+731,AA-10645,Anna Andreadi,Consumer,East,Silver
+732,DD-13570,Dorothy Dickinson,Consumer,Central,Bronze
+733,AH-10465,Amy Hunt,Consumer,East,Bronze
+734,TP-21565,Tracy Poddar,Corporate,West,Bronze
+735,EK-13795,Eileen Kiefer,Home Office,West,Bronze
+736,CR-12820,Cyra Reiten,Home Office,East,Bronze
+737,SG-20890,Susan Gilcrest,Corporate,Central,Bronze
+738,AH-10585,Angele Hood,Consumer,Central,Bronze
+739,NF-18475,Neil Französisch,Home Office,Central,Bronze
+740,BS-11365,Bill Shonely,Corporate,East,Bronze
+741,SH-20635,Stefanie Holloman,Corporate,South,Bronze
+742,RD-19720,Roger Demir,Consumer,South,Silver
+743,AG-10330,Alex Grayson,Consumer,West,Bronze
+744,GR-14560,Georgia Rosenberg,Corporate,West,Bronze
+745,VS-21820,Vivek Sundaresam,Consumer,West,Bronze
+746,TM-21490,Tony Molinari,Consumer,Central,Bronze
+747,TS-21430,Tom Stivers,Corporate,West,Bronze
+748,DB-13360,Dennis Bolton,Home Office,East,Bronze
+749,NR-18550,Nick Radford,Consumer,Central,Bronze
+750,CS-11860,Cari Schnelling,Consumer,South,Bronze
+751,MF-18250,Monica Federle,Corporate,West,Silver
+752,LW-17125,Liz Willingham,Consumer,East,Bronze
+753,AR-10345,Alex Russell,Corporate,East,Bronze
+754,KS-16300,Karen Seio,Corporate,West,Bronze
+755,AB-10015,Aaron Bergman,Consumer,West,Bronze
+756,LR-17035,Lisa Ryan,Corporate,East,Bronze
+757,SS-20410,Shahid Shariari,Consumer,West,Bronze
+758,JM-15580,Jill Matthias,Consumer,South,Bronze
+759,JK-15325,Jason Klamczynski,Corporate,Central,Bronze
+760,DM-13525,Don Miller,Corporate,Central,Bronze
+761,ML-18265,Muhammed Lee,Consumer,West,Bronze
+762,MH-17290,Marc Harrigan,Home Office,West,Bronze
+763,FC-14245,Frank Carlisle,Home Office,East,Silver
+764,TH-21115,Thea Hudgings,Corporate,East,Bronze
+765,JK-16090,Juliana Krohn,Consumer,Central,Silver
+766,SB-20185,Sarah Brown,Consumer,East,Silver
+767,BG-11035,Barry Gonzalez,Consumer,South,Bronze
+768,BW-11065,Barry Weirich,Consumer,South,Bronze
+769,MG-18205,Mitch Gastineau,Corporate,South,Bronze
+770,DO-13645,Doug O'Connell,Consumer,West,Silver
+771,BP-11050,Barry Pond,Corporate,East,Bronze
+772,TS-21655,Trudy Schmidt,Consumer,Central,Bronze
+773,EM-14200,Evan Minnotte,Home Office,South,Bronze
+774,AO-10810,Anthony O'Donnell,Corporate,West,Bronze
+775,MH-17440,Mark Haberlin,Corporate,East,Bronze
+776,SS-20515,Shirley Schmidt,Home Office,South,Bronze
+777,LD-16855,Lela Donovan,Corporate,Central,Bronze
+778,VP-21760,Victoria Pisteka,Corporate,West,Bronze
+779,TC-21145,Theresa Coyne,Corporate,East,Bronze
+780,IM-15055,Ionia McGrath,Consumer,West,Bronze
+781,AR-10570,Anemone Ratner,Consumer,South,Bronze
+782,CM-12715,Craig Molinari,Corporate,Central,Bronze
+783,FW-14395,Fred Wasserman,Corporate,South,Bronze
+784,LC-16960,Lindsay Castell,Home Office,South,Bronze
+785,HE-14800,Harold Engle,Corporate,Central,Silver
+786,BD-11560,Brendan Dodson,Home Office,West,Bronze
+787,HD-14785,Harold Dahlen,Home Office,East,Bronze
+788,CJ-11875,Carl Jackson,Corporate,East,Bronze
+789,RS-19870,Roy Skaria,Home Office,Central,Bronze
+790,SC-20845,Sung Chung,Consumer,Central,Bronze
+791,RE-19405,Ricardo Emerson,Consumer,East,Bronze
+792,SM-20905,Susan MacKendrick,Consumer,East,Bronze
