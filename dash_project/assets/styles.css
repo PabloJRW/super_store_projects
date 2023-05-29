@@ -1,3 +1,5 @@
+
+
 #title {
     display:flex;
     justify-content:center; 
@@ -10,8 +12,8 @@
 }
 
 #principal-graph {
-    width:600px;
-    height:250px;
+    width:100%;
+    height:30%;
 }
 
 .div-viz {
@@ -19,7 +21,7 @@
 }
 
 .bi-viz {
-    width:750px;
-    height:750px;
+    width:50%;
+    height:50%;
 }
 

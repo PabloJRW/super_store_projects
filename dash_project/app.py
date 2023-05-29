@@ -3,14 +3,15 @@ import pandas as pd
 import plotly.graph_objs as go
 from dash import Dash, dcc, html
 
-app = Dash(__name__, external_stylesheets=['styles.css'])
+app = Dash(__name__, external_stylesheets=['styles.css', 'custom.js'])
 
 DATA_PATH = os.path.join('..','datasets','raw','Superstore.csv')
-store_df = pd.read_csv(DATA_PATH, parse_dates=['Order Date', 'Ship Date'])
-store_df.set_index('Date Order', inplace=True)
+store_df = pd.read_csv(DATA_PATH, parse_dates=['Order Date', 'Ship Date'], encoding='latin-1')
+store_df.set_index('Order Date', inplace=True)
+sales = store_df.groupby(store_df['Sales'].dt.to_period('M'))
 
 
-app.layout = html.Div([
+app.layout = html.Div(id='main-div',children=[
     #DIV - HEADER
     html.Div(
         html.H1(id='title',
@@ -18,12 +19,14 @@ app.layout = html.Div([
     ),
     
     # DIV - FIRST VIZ
-    html.Div(
+    html.Div(  
         className='principal-graph',
         children=[
             dcc.Graph(id='1st-graph',
-                      figure={'data':[go.Box(
-                                              y=store_df['Sales'])]}
+                      figure={'data':[go.Line(x=sales.index,
+                                              y=sales)]
+                                
+                               }
                       )]
     ),   
      
@@ -42,8 +45,8 @@ app.layout = html.Div([
         ]
     )
 
-])
+], style={'overflow-y':'hidden'})
 
-
+  
 if __name__=='__main__':
     app.run_server(host='127.0.0.1', port='8050',debug=True)
