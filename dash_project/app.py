@@ -3,12 +3,13 @@ import pandas as pd
 import plotly.graph_objs as go
 from dash import Dash, dcc, html
 
-app = Dash(__name__, external_stylesheets=['styles.css', 'custom.js'])
+app = Dash(__name__, external_stylesheets=['styles.css'])
 
 DATA_PATH = os.path.join('..','datasets','raw','Superstore.csv')
 store_df = pd.read_csv(DATA_PATH, parse_dates=['Order Date', 'Ship Date'], encoding='latin-1')
-store_df.set_index('Order Date', inplace=True)
-sales = store_df.groupby(store_df['Sales'].dt.to_period('M'))
+data_by_region = pd.read_csv('../datasets/processed/data_by_region.csv')
+data_by_segment = pd.read_csv('../datasets/processed/data_by_segment.csv')
+
 
 
 app.layout = html.Div(id='main-div',children=[
@@ -23,8 +24,8 @@ app.layout = html.Div(id='main-div',children=[
         className='principal-graph',
         children=[
             dcc.Graph(id='1st-graph',
-                      figure={'data':[go.Line(x=sales.index,
-                                              y=sales)]
+                      figure={'data':[go.Line(x=store_df['Order Date'].sort_values(),
+                                              y=store_df['Sales'])]
                                 
                                }
                       )]
@@ -36,11 +37,22 @@ app.layout = html.Div(id='main-div',children=[
         children = [
             html.Div(className='bi-viz',
                      children=[
-                         dcc.Graph(id='2nd-graph')]
+                         dcc.Graph(id='2nd-graph',
+                                   figure={'data':[go.Bar(x=data_by_region.index,
+                                                          y=data_by_region['Sales'],
+                                                          name='Sales by region')],
+                                           'layout':go.Layout(title='Sales by region')}
+                         )
+                     ]
                     ),
             html.Div(className='bi-viz',
                      children=[
-                         dcc.Graph(id='3rd-graph')]
+                         dcc.Graph(id='3rd-graph',
+                                   figure={'data':[go.Bar(x=data_by_segment.index,
+                                                          y=data_by_segment['Sales'],
+                                                          name='Sales by segment')]}
+                         )
+                     ]
                     )
         ]
     )
