@@ -11,17 +11,29 @@
     font-size:42px
 }
 
-#selectors-div {
-    height:10%;
-    width:100%;
-    display:flex;
-}
 
+#div-selectors {
+    height:10%;
+    width:100%;  
+    display:flex; 
+    padding:0%; 
+    justify-content: space-between;
+}
+     
 .selector {
     width:33%;
     background-color:silver;
     padding:1%;
+    padding:0%;
+    align-items:end;
+    border: 1px solid black;
+
 }
+
+.h3-selector {
+    margin:1.5px 3px;
+}
+
 
 #principal-graph {
     width:100%;

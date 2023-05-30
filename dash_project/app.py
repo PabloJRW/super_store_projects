@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import plotly.graph_objs as go
+import plotly.express as px
 from dash import Dash, dcc, html
 from dash.dependencies import Input, Output
 from datetime import datetime
@@ -18,34 +18,42 @@ app.layout = html.Div(id='main-div',children=[
     ),
 
     # DIV - SELECTORS
-    html.Div(id='selectors-div',
+    html.Div(id='div-selectors',
              children=[
-                 html.Div(id='option',
-                          className='selector',
-                          children=
-                              dcc.RadioItems(
-                                  options=['Sales','Profit','Discount','Quantity'],
-                                  value='Sales',
-                                  style={'display':'flex'}
-                              )
+                 html.Div(
+                     className='selector',
+                     children=[
+                         html.H3(className='h3-selector', children='Select an option:'),
+                         dcc.RadioItems(
+                             id='picoloco',
+                             options=['Sales','Profit','Discount','Quantity'],
+                             value='Sales',
+                             style={'display':'flex',
+                                    'justifyContent':'space-evenly'}
+                         )
+                     ]
                  ),
 
                  html.Div(id='date-range-picker',
                           className='selector',
-                          children=
+                          children=[
+                              html.H3(className='h3-selector'),
                               dcc.DatePickerRange(
                                   start_date=datetime(2017,1,1),
                                   end_date=datetime(2017,12,31),
                                   min_date_allowed=datetime(2016,1,1),
-                                  max_date_allowed=datetime(2017,12,31)
+                                  max_date_allowed=datetime(2017,12,31),
+                                  style={'height':'60%'}
                               )
+                            ]
                  ),
 
-                 html.Div(id='option2',
+                 html.Div(
                           className='selector',
                           children=
                               dcc.RadioItems(
-                                  options=['Region', 'Category'],
+                                  id='culosucio',
+                                  options=['Region', 'Category', 'Sub-Category'],
                                   value='Region',
                                   style={'display':'flex'}
                               )
@@ -54,50 +62,59 @@ app.layout = html.Div(id='main-div',children=[
              ]
     ),
     
-    # DIV - FIRST VIZ
-    html.Div(  
-        className='principal-graph',
-        children=[
-            dcc.Graph(id='1st-graph',
-                      figure={'data':[go.Line(x=store_df['Order Date'].sort_values(),
-                                              y=store_df['Sales'])]
-                             }
-                      )
-        ]
-    ),   
+    html.Div(id='div-graphs',
+             children=[
+                    # DIV - FIRST VIZ
+                    html.Div(  
+                        className='principal-graph',
+                        children=[
+                            dcc.Graph(id='1st-graph',
+                                     figure={'data':[px.line(x=store_df['Order Date'].sort_values(),
+                                                             y=store_df['Sales'])]
+                                            }
+                            )
+                        ]
+                    ),   
      
-    # DIV - DUAL VIZ
-    html.Div(
-        className='div-viz',
-        children = [
-            html.Div(className='bi-viz',
-                     children=[
-                         dcc.Graph(id='2nd-graph')
-                     ]
-                    ),
-            html.Div(className='bi-viz',
-                     children=[
-                         dcc.Graph(id='3rd-graph')
-                     ]
-                    )
+                    # DIV - DUAL VIZ
+                    html.Div(
+                        className='div-viz',
+                        children = [
+                            html.Div(className='bi-viz',
+                                     children=[
+                                        dcc.Graph(id='2nd-graph')
+                                     ]
+                            ),
+
+                            html.Div(className='bi-viz',
+                                children=[
+                                    dcc.Graph(id='3rd-graph')
+                                ]
+                            )
         ]
-    )
+    )    
+             ])
 
 ], style={'overflow-y':'hidden'})
 
 
 @app.callback(Output('2nd-graph', 'figure'),
-              [Input('option2', 'value'),
-               Input('option', 'value')])
+              [Input('culosucio', 'value'),
+               Input('picoloco', 'value')])
 def groupingData(group_by, option23):
     """Function that group data by 'group_by' and return percentage variables"""
     
     # Grouping data by feat
     grouping = store_df.groupby(by=group_by).sum().drop('Postal Code', axis=1)
     
-    fig = [go.Bar(x=grouping.index, 
-                  y=grouping[option23],
-                  name=group_by)]
+    fig = px.bar(x=grouping.index, 
+                  y=grouping[option23])
+    
+    fig.update_layout(
+        title="{} by {}".format(option23, group_by),
+        xaxis_title="{}".format(group_by),
+        yaxis_title="{}".format(option23)
+    )
 
     return fig
 
