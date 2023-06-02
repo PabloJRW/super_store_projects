@@ -2,10 +2,11 @@ import os
 import pandas as pd
 import plotly.express as px
 from dash import Dash, dcc, html
+import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
-from datetime import datetime
 
-app = Dash(__name__, external_stylesheets=['styles.css'])
+
+app = Dash(__name__, external_stylesheets=['styles.css',dbc.themes.BOOTSTRAP])
 
 DATA_PATH = os.path.join('..','datasets','raw','Superstore.csv')
 store_df = pd.read_csv(DATA_PATH, parse_dates=['Order Date', 'Ship Date'], encoding='latin-1')
@@ -32,7 +33,7 @@ app.layout = html.Div(id='main-div',children=[
                              options=['Sales','Profit','Discount','Quantity'],
                              value='Sales',
                              style={'display':'flex',
-                                    'justifyContent':'space-evenly'}
+                                    'justifyContent':'space-evenly'}  
                          )
                      ]
                  ),
@@ -46,7 +47,8 @@ app.layout = html.Div(id='main-div',children=[
                                   id='culosucio',
                                   options=['Region', 'Segment', 'Category', 'Sub-Category'],
                                   value='Region',
-                                  style={'display':'flex'}
+                                  style={'display':'flex',
+                                         'justifyContent':'space-evenly'}
                               )
                           ]
                  ),
@@ -77,8 +79,7 @@ app.layout = html.Div(id='main-div',children=[
                         children=[
                             dcc.Graph(id='1st-graph',
                                      figure={'data':[px.line(x=store_df['Order Date'].sort_values(),
-                                                             y=store_df['Sales'])]
-                                            }
+                                                             y=store_df['Sales'])]},                                    
                             )
                         ]
                     ),
@@ -102,14 +103,16 @@ def groupingData(group_by, option23, start_date, end_date):
     grouping = date_range_df.groupby(by=group_by).sum().drop('Postal Code', axis=1)
     
     fig = px.bar(x=grouping.index, 
-                  y=grouping[option23])
+                 y=grouping[option23])
     
     fig.update_layout(
         title={'text':"{} BY {}".format(option23.upper(), group_by.upper()),
                'x':0.5},
         xaxis_title="{}".format(group_by),
-        yaxis_title="{}".format(option23)
+        yaxis_title="{}".format(option23),
     )
+
+    fig.update_traces()
 
     return fig
 

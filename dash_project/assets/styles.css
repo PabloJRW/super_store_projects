@@ -1,5 +1,4 @@
 
-
 #title {
     display:flex;
     justify-content:center; 
@@ -43,12 +42,4 @@
     width:80%;
 }
 
-.div-viz {
-    display:flex;
-}
-
-.bi-viz {
-    width:50%;
-    height:50%;
-}
 
