@@ -65,24 +65,27 @@
                     <h2 class="text-center ">Usuarios Registrados</h2>
             <!-- Tabla -->
 
-                <table class="table">
-                    <thead>
-                        <th scope="col">Nombre del cliente</th>
-                        <th scope="col">Región</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Ciudad</th>
-                        <th scope="col">Código Postal</th>
-                    </thead>
-                </table>
-                <tbody>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tbody>
-
+                    <table class="table">
+                        <thead>
+                            <th scope="col">Nombre del cliente</th>
+                            <th scope="col">Región</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Ciudad</th>
+                            <th scope="col">Código Postal</th>
+                        </thead>
+                
+                        <tbody>
+                            {% for d in data %}
+                            <td>{{d.Nombre}}</td>
+                            <td>{{d.Estado}}</td>
+                            <td>{{d.Ciudad}}</td>
+                            <td>{{d.Codigo Postal}}</td>
+                            <td><button class="btn btn-primary btn-sm" id="">Editar</button></td>
+                            <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
+                            <tr></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
