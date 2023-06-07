@@ -12,66 +12,62 @@
     <h1 class="text-center mt-5 mb-5 text-primary">Super Store App</h1>
 
     <div class="container">
+
+        <!-- Registro de usuarios -->
         <div class="card shadow">
             <div class="card-body">
-                <div class="row mb-3 shadow">
-                    <div class="col">
-                        <label>Nombre del cliente</label>
-                        <input type="text" class="form-control" name="customername">
-                    </div>
-                    <div class="col">
-                        <div class="col-name">
-                            <label>Región</label>
+                <form action="" method="POST">
+                    <div class="row mb-3 shadow">
+                        <div class="col">
+                            <label>Nombre del cliente</label>
+                            <input type="text" class="form-control" name="customername">
                         </div>
-                        <div class="btn btn-secondary dropdown-toggle" type="button" id="regionMenu">
-                            Seleccione...
+                        <div class="col">
+                            <div class="col-name">
+                                <label>Estado</label>
+                            </div>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Seleccione...
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Norte</a>
+                                <a class="dropdown-item" href="#">Este</a>
+                                <a class="dropdown-item" href="#">Sur</a>
+                                <a class="dropdown-item" href="#">Oeste</a>
+                            </div>
                         </div>
-                        <div class="dropdown-menu" aria-labelledby="regionMenu">
-                            <a class="dropdown-item" href="#">Norte</a>
-                            <a class="dropdown-item" href="#">Este</a>
-                            <a class="dropdown-item" href="#">Sur</a>
-                            <a class="dropdown-item" href="#">Oeste</a>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-name">
-                            <label>Estado</label>
+                        <div class="col">
+                            <div class="col-name">
+                                <label">Ciudad</label>
+                            </div>
+                            <div class="btn btn-secondary dropdown-toggle" type="button" id="regionMenu">Seleccione...</div>
                         </div>
-                        <div class="btn btn-secondary dropdown-toggle" type="button" id="stateMenu">
-                            Seleccione...
+                        <div class="col">
+                            <button class="btn btn-primary mb-3 mt-4">Save</button>
                         </div>
-                        <div class="dropdown-menu" aria-labelledby="stateMenu">
-                            <a class="dropdown-item" href="#">Norte</a>
-                            <a class="dropdown-item" href="#">Este</a>
-                            <a class="dropdown-item" href="#">Sur</a>
-                            <a class="dropdown-item" href="#">Oeste</a>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-name">
-                            <label">Ciudad</label>
-                        </div>
-                        <div class="btn btn-secondary dropdown-toggle" type="button" id="regionMenu">Seleccione...</div>
-                    </div>
-                    <div class="col">
-                        <label">Código Postal</label>
-                        <input type="text" class="form-control mb-3" name="postalcode">
-                    </div>
-                </div>
-
+                    </div>       
+                </form>
             </div>
+        </div>
+    </div>
+        <!-- --> 
+
+    <div class="container mt-3">
+        <div class="card">
+            
             <div class="database mt-3">
                 <div class="database-body">
                     <h2 class="text-center ">Usuarios Registrados</h2>
+            </div>
+           
             <!-- Tabla -->
-
+            <div class="card-body">
+                <div>
                     <table class="table">
                         <thead>
                             <th scope="col">Nombre del cliente</th>
-                            <th scope="col">Región</th>
                             <th scope="col">Estado</th>
                             <th scope="col">Ciudad</th>
-                            <th scope="col">Código Postal</th>
                         </thead>
                 
                         <tbody>
@@ -79,7 +75,6 @@
                             <td>{{d.Nombre}}</td>
                             <td>{{d.Estado}}</td>
                             <td>{{d.Ciudad}}</td>
-                            <td>{{d.Codigo Postal}}</td>
                             <td><button class="btn btn-primary btn-sm" id="">Editar</button></td>
                             <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
                             <tr></tr>
@@ -88,8 +83,9 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div>    
     </div>
+    
 
 </body>
 </html>
