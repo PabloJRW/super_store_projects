@@ -16,34 +16,26 @@
         <!-- Registro de usuarios -->
         <div class="card shadow">
             <div class="card-body">
-                <form action="" method="POST">
+                <form action="/user" method="POST">
                     <div class="row mb-3 shadow">
-                        <div class="col">
+                        <!-- Nombre -->
+                        <div class="col"> 
                             <label>Nombre del cliente</label>
                             <input type="text" class="form-control" name="customername">
                         </div>
+                        <!-- Estado -->
                         <div class="col">
-                            <div class="col-name">
-                                <label>Estado</label>
-                            </div>
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Seleccione...
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Norte</a>
-                                <a class="dropdown-item" href="#">Este</a>
-                                <a class="dropdown-item" href="#">Sur</a>
-                                <a class="dropdown-item" href="#">Oeste</a>
-                            </div>
+                            <label>Estado</label>
+                            <input type="text" class="form-control" name="state">
                         </div>
+                        <!-- Ciudad -->
                         <div class="col">
-                            <div class="col-name">
-                                <label">Ciudad</label>
-                            </div>
-                            <div class="btn btn-secondary dropdown-toggle" type="button" id="regionMenu">Seleccione...</div>
+                            <label>City</label>
+                            <input type="text" class="form-control" name="city">
                         </div>
+                        <!-- Guardar -->
                         <div class="col">
-                            <button class="btn btn-primary mb-3 mt-4">Save</button>
+                            <button class="btn btn-primary mb-3 mt-4">Guardar</button>
                         </div>
                     </div>       
                 </form>
@@ -68,16 +60,46 @@
                             <th scope="col">Nombre del cliente</th>
                             <th scope="col">Estado</th>
                             <th scope="col">Ciudad</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Eliminar</th>
                         </thead>
                 
                         <tbody>
                             {% for d in data %}
-                            <td>{{d.Nombre}}</td>
-                            <td>{{d.Estado}}</td>
-                            <td>{{d.Ciudad}}</td>
-                            <td><button class="btn btn-primary btn-sm" id="">Editar</button></td>
-                            <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-                            <tr></tr>
+                            <tr>                              
+                                <td>{{d.nombre}}</td>
+                                <td>{{d.estado}}</td>
+                                <td>{{d.ciudad}}</td>
+                                <td><button class="btn btn-primary btn-sm" id="btn-edit{{d.id}}" data-bs-toggle="modal" data-ts-target="#modal{{d.id}}">Editar</button></td>
+                                <td><a href="{{url_for('delete', id=d.id)}}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                            </tr>
+
+                            <!-- modal -->
+
+                            <div class="modal fade" id="modal{{d.id}}" tabindex="-1" aria-labelledby="exampleModal">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Modal title</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form action="/edit/{{d.id}}" method="post">
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-control mb-5" name="nombre" value="{{d.nombre}}">
+                                        <label>Estado</label>
+                                        <input type="text" class="form-control mb-5" name="estado" value="{{d.estado}}">
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-control mb-5" name="ciudad" value="{{d.ciudad}}">
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="submit" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
                             {% endfor %}
                         </tbody>
                     </table>

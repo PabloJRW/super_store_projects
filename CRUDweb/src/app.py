@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 import database as db
 
 
@@ -13,7 +13,7 @@ app = Flask(__name__, template_folder=template_dir)
 @app.route('/')
 def home():
     cursor = db.database.cursor()
-    cursor.execute("SELECT * FROM usuarios")
+    cursor.execute("SELECT * FROM users")
     myresult = cursor.fetchall()
     # Convertir los datos a diccionario
     insertObject = []
@@ -23,6 +23,48 @@ def home():
     cursor.close()
 
     return render_template('index.html', data=insertObject)
+
+
+
+# Ruta para guardar usuarios en la base de datos
+@app.route('/user', methods=["POST"])
+def addUser():
+    nombre = request.form['customername']
+    estado = request.form['state']
+    ciudad = request.form['city']
+
+    if nombre and estado and ciudad:
+        cursor = db.database.cursor()
+        sql = "INSERT INTO users (Nombre, Estado, Ciudad) VALUES (%s, %s, %s)"
+        data = (nombre, estado, ciudad)
+        cursor.execute(sql, data)
+        db.database.commit()
+    return redirect(url_for('home'))
+
+
+@app.route('/edit/<string:id>', methods=["POST"])
+def edit(id):
+    nombre = request.form['customername']
+    estado = request.form['state']
+    ciudad = request.form['city']
+
+    if nombre and estado and ciudad:
+        cursor = db.database.cursor()
+        sql = "UPDATE users SET nombre=%s, estado=%s, ciudad=%s WHERE id = %s"
+        data = (nombre, estado, ciudad, id)
+        cursor.execute(sql, data)
+        db.database.commit()
+    return redirect(url_for('home'))
+
+
+@app.route('/delete/<string:id>')
+def delete(id):
+    cursor = db.database.cursor()
+    sql = "DELETE FROM users WHERE id=%s"
+    data = (id,)
+    cursor.execute(sql, data)
+    db.database.commit()
+    return redirect(url_for('home'))
 
 
 if __name__ == '__main__':
