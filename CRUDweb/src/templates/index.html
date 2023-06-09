@@ -70,7 +70,7 @@
                                 <td>{{d.nombre}}</td>
                                 <td>{{d.estado}}</td>
                                 <td>{{d.ciudad}}</td>
-                                <td><button class="btn btn-primary btn-sm" id="btn-edit{{d.id}}" data-bs-toggle="modal" data-ts-target="#modal{{d.id}}">Editar</button></td>
+                                <td><button class="btn btn-primary btn-sm" id="btn-edit{{d.id}}" data-bs-toggle="modal" data-bs-target="#modal{{d.id}}">Editar</button></td>
                                 <td><a href="{{url_for('delete', id=d.id)}}" class="btn btn-danger btn-sm">Eliminar</a></td>
                             </tr>
 
@@ -80,7 +80,7 @@
                                 <div class="modal-dialog">
                                   <div class="modal-content">
                                     <div class="modal-header">
-                                      <h5 class="modal-title">Modal title</h5>
+                                      <h5 class="modal-title fs-5">Editar Registro</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -94,7 +94,7 @@
                                       </form>
                                     </div>
                                     <div class="modal-footer">
-                                      <button type="submit" class="btn btn-primary">Save changes</button>
+                                      <button type="submit" class="btn btn-primary">Guardar</button>
                                     </div>
                                   </div>
                                 </div>
