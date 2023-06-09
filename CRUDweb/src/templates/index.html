@@ -70,35 +70,11 @@
                                 <td>{{d.nombre}}</td>
                                 <td>{{d.estado}}</td>
                                 <td>{{d.ciudad}}</td>
-                                <td><button class="btn btn-primary btn-sm" id="btn-edit{{d.id}}" data-bs-toggle="modal" data-bs-target="#modal{{d.id}}">Editar</button></td>
-                                <td><a href="{{url_for('delete', id=d.id)}}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                                <td>
+                                    <a href="{{url_for('edit', id=d.id)}}" class="btn btn-primary btn-sm">Editar</a></td>
+                                <td>
+                                    <a href="{{url_for('delete', id=d.id)}}" class="btn btn-danger btn-sm">Eliminar</a></td>
                             </tr>
-
-                            <!-- modal -->
-
-                            <div class="modal fade" id="modal{{d.id}}" tabindex="-1" aria-labelledby="exampleModal">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title fs-5">Editar Registro</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <form action="/edit/{{d.id}}" method="post">
-                                        <label>Nombre</label>
-                                        <input type="text" class="form-control mb-5" name="nombre" value="{{d.nombre}}">
-                                        <label>Estado</label>
-                                        <input type="text" class="form-control mb-5" name="estado" value="{{d.estado}}">
-                                        <label>Nombre</label>
-                                        <input type="text" class="form-control mb-5" name="ciudad" value="{{d.ciudad}}">
-                                      </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="submit" class="btn btn-primary">Guardar</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
 
                             {% endfor %}
                         </tbody>

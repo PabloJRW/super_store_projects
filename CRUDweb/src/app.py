@@ -42,19 +42,9 @@ def addUser():
     return redirect(url_for('home'))
 
 
-@app.route('/edit/<string:id>', methods=["POST"])
+@app.route('/edit/<string:id>')
 def edit(id):
-    nombre = request.form['customername']
-    estado = request.form['state']
-    ciudad = request.form['city']
-
-    if nombre and estado and ciudad:
-        cursor = db.database.cursor()
-        sql = "UPDATE users SET nombre=%s, estado=%s, ciudad=%s WHERE id = %s"
-        data = (nombre, estado, ciudad, id)
-        cursor.execute(sql, data)
-        db.database.commit()
-    return redirect(url_for('home'))
+    return render_template('edit.html')
 
 
 @app.route('/delete/<string:id>')
