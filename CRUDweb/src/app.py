@@ -44,13 +44,32 @@ def addUser():
 
 @app.route('/edit/<string:id>')
 def edit(id):
-    return render_template('edit.html')
+    cursor = db.database.cursor()
+    cursor.execute("SELECT * FROM users WHERE id=%s", (id,))
+    a_editar = cursor.fetchall()
+    db.database.commit()
+    
+    return render_template('edit.html', data=a_editar)
+
+@app.route('/update/<string:id>')
+def update(id):
+    nombre = request.form.get('customername')
+    estado = request.form.get('state')
+    ciudad = request.form.get('city')
+    
+    if nombre and estado and ciudad:
+        cursor = db.database.cursor()
+        values_to_edit = (nombre, estado, ciudad, id)
+        cursor.execute("UPDATE users SET Nombre=%s, Estado=%s, Ciudad=%s WHERE id=%s", values_to_edit)
+        db.database.commit()
+
+    return redirect('/'), print(id)
 
 
 @app.route('/delete/<string:id>')
 def delete(id):
     cursor = db.database.cursor()
-    sql = "DELETE FROM users WHERE id=%s"
+    sql = "DELETE FROM users WHERE id=%s" 
     data = (id,)
     cursor.execute(sql, data)
     db.database.commit()
@@ -58,4 +77,4 @@ def delete(id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5050) 
+    app.run(debug=True) 
