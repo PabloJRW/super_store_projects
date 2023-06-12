@@ -9,7 +9,7 @@ template_dir = os.path.join(template_dir, 'src', 'templates')
 
 app = Flask(__name__, template_folder=template_dir)
 
-# Rutas de la aplicación 
+# Principal 
 @app.route('/')
 def home():
     cursor = db.database.cursor()
@@ -25,8 +25,13 @@ def home():
     return render_template('index.html', data=insertObject)
 
 
+# Ruta para la página de registro de usuarios
+@app.route('/register')
+def register():
+    return render_template('register.html')
 
-# Ruta para guardar usuarios en la base de datos
+
+# Ruta para guardar clientes en la base de datos
 @app.route('/user', methods=["POST"])
 def addUser():
     nombre = request.form['customername']
@@ -35,37 +40,44 @@ def addUser():
 
     if nombre and estado and ciudad:
         cursor = db.database.cursor()
-        sql = "INSERT INTO users (Nombre, Estado, Ciudad) VALUES (%s, %s, %s)"
+        sql = "INSERT INTO users (nombre, estado, ciudad) VALUES (%s, %s, %s)"
         data = (nombre, estado, ciudad)
         cursor.execute(sql, data)
         db.database.commit()
     return redirect(url_for('home'))
 
-
+# Ruta para editar los datos de los clientes
 @app.route('/edit/<string:id>')
 def edit(id):
     cursor = db.database.cursor()
     cursor.execute("SELECT * FROM users WHERE id=%s", (id,))
-    a_editar = cursor.fetchall()
-    db.database.commit()
+    response = cursor.fetchall()
+    columnNames  = [column[0] for column in cursor.description]
+    a_editar=[]
+    for record in response:
+        a_editar.append(dict(zip(columnNames, record)))
+    cursor.close()
     
     return render_template('edit.html', data=a_editar)
 
+
+# Ruta para actualizar los datos editados de los clientes
 @app.route('/update/<string:id>')
 def update(id):
-    nombre = request.form.get('customername')
-    estado = request.form.get('state')
-    ciudad = request.form.get('city')
-    
+    nombre = request.form.get('customername', False)
+    estado = request.form.get('state', False)
+    ciudad = request.form.get('city', False)
+   
     if nombre and estado and ciudad:
         cursor = db.database.cursor()
         values_to_edit = (nombre, estado, ciudad, id)
-        cursor.execute("UPDATE users SET Nombre=%s, Estado=%s, Ciudad=%s WHERE id=%s", values_to_edit)
+        cursor.execute("UPDATE users SET nombre=%s, estado=%s, ciudad=%s WHERE id=%s", values_to_edit)
         db.database.commit()
 
-    return redirect('/'), print(id)
+    return redirect(url_for('home')), print(id,nombre,estado, ciudad)
 
 
+# Ruta para eliminar registro de usuario
 @app.route('/delete/<string:id>')
 def delete(id):
     cursor = db.database.cursor()

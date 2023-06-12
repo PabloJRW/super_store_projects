@@ -10,13 +10,18 @@
 </head>
 <body>
     <h1 class="text-center mt-5 mb-5 text-primary">Super Store App</h1>
-
+    <div class="container mb-3">
+        <nav>
+            <a href="{{url_for('home')}}" class="btn btn-primary btn-sm">Home</a>
+            <a href="{{url_for('register')}}" class="btn btn-primary btn-sm">Registrar</a>
+        </nav>
+    </div>
     <div class="container">
         <!-- Registro de usuarios -->
         <div class="card shadow">
             <div class="card-body">
                 <form action="/user" method="POST">
-                    <div class="row mb-3 shadow">
+                    <div class="row mb-3 shadow">  
                         <!-- Nombre -->
                         <div class="col"> 
                             <label>Nombre del cliente</label>
