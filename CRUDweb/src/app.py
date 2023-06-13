@@ -25,6 +25,51 @@ def home():
     return render_template('index.html', data=insertObject)
 
 
+# Ruta para buscar registros por parámetros
+@app.route('/search', methods=['POST'])
+def search():
+    customername = request.form.get('customername')
+    state = request.form.get('state')
+    city = request.form.get('city')
+
+    cursor = db.database.cursor()
+    query = "SELECT * FROM users"
+
+    condiciones = []
+    valores = []
+
+    if customername is not None:
+        condiciones.append("nombre = %s")
+        valores.append(customername)
+
+    if state is not None:
+        condiciones.append("estado = %s")
+        valores.append(state)
+    
+    if city is not None:
+        condiciones.append("ciudad = %s")
+        valores.append(city)
+
+    if condiciones:
+        query += " WHERE " + " OR ".join(condiciones)
+
+    #Ejecutar la consulta
+    cursor.execute(query, valores)
+    # Obtener los resultados
+    response = cursor.fetchall()
+
+
+    # Convertir los datos a diccionario
+    insertObject = []
+    columnNames = [column[0] for column in cursor.description]
+    for record in response:
+        insertObject.append(dict(zip(columnNames, record)))
+    cursor.close()
+    return render_template('index.html', data=insertObject), print(query)
+    
+    
+
+
 # Ruta para la página de registro de usuarios
 @app.route('/register')
 def register():
@@ -32,7 +77,7 @@ def register():
 
 
 # Ruta para guardar clientes en la base de datos
-@app.route('/user', methods=["POST"])
+@app.route('/add-user', methods=["POST"])
 def addUser():
     nombre = request.form['customername']
     estado = request.form['state']
