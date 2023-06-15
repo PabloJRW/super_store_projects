@@ -18,7 +18,7 @@
         <div class="card shadow">
             <div class="card-body">
                 {% for d in data %}
-                <form action="/update" method="post">
+                <form action="{{url_for('update', id=d.id)}}" method="POST">
                     <div class="row shadow">
                         <!-- Nombre -->  
                         <div class="col"> 
@@ -37,7 +37,7 @@
                         </div>
                         <!-- Guardar -->
                         <div class="col">
-                            <a href="{{url_for('update', id=d.id)}}" class="btn btn-primary mb-3 mt-4">Actualizar</a>
+                            <input type="submit" class="btn btn-primary mb-3 mt-4" value="Actualizar">
                         </div>
                     </div>   
                 </form>

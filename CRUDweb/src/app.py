@@ -107,7 +107,7 @@ def edit(id):
 
 
 # Ruta para actualizar los datos editados de los clientes
-@app.route('/update/<string:id>')
+@app.route('/update/<string:id>', methods=['POST'])
 def update(id):
     nombre = request.form.get('customername', False)
     estado = request.form.get('state', False)
