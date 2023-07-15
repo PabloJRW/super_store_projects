@@ -20,18 +20,22 @@ st.title("SuperStore Sales Dashboard")
 # Options
 st.sidebar.title("Select Options:")
 options = st.sidebar.radio(
-    'What are your favorite colors',
+    'Select:',
     options=['Sales', 'Profit'])
 
 
 # Years options
-list_of_years = (data.index.year).unique()
-year_selected = st.sidebar.multiselect(label="Select years:", options=list_of_years, default=[2016])
+list_of_years = ((data.index.year).unique()).sort_values()
+
+min_year_selected, max_year_selected = st.sidebar.select_slider(
+    'Select a range of years',
+    options=list_of_years,
+    value=(list_of_years.min(), list_of_years.max()))
 
 
 #  #######################################################################################
 
-filtered_by_year = data.loc[data.index.year.isin(year_selected)]
+filtered_by_year = data[(data.index.year >= min_year_selected) & (data.index.year <= max_year_selected)]
 
 data_by_region = filtered_by_year.groupby('Region')[['Sales', 'Profit']].sum()
 data_by_segment = filtered_by_year.groupby('Segment')[['Sales', 'Profit']].sum()
@@ -40,7 +44,8 @@ resample_data = filtered_by_year.resample('M').sum()
 
 # DASHBOARD ############################################################################################
 
-for year in year_selected:
+years_range = range(min_year_selected,max_year_selected,1)
+for year in years_range:
     st.line_chart(resample_data[resample_data.index.year==year]['Sales'])
 
 
